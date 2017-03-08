@@ -4,19 +4,9 @@
     <meta charset="UTF-8">
     <title>box</title>
     <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .xiezi {
-            width: 100px;
-            height: 80px;
-            background-color: orange;
-
-        }
         /*标准的css盒子模型宽高=内容区(content)宽高；*/
-        .xiehe {
+        .w3cbox
+        {
             margin: 10px;;
             padding: 10px;
             width: 100px;
@@ -28,14 +18,14 @@
             box-sizing: content-box;;;;
         }
 
-        .xiezi1 {
+        .content {
             width: 100px;
             height: 80px;
             background-color: orange;
 
         }
         /*低端IE/怪异的盒模型 css盒子模型宽高=内边距(padding)﹢边界(border)﹢内容区宽高；*/
-        .xiehe1 {
+        .iebox {
             margin: 10px;;
             padding: 10px;
             width: 140px;
@@ -51,16 +41,16 @@
 </head>
 <body>
 
-<div class="xiehe">
-    <div class="xiezi">
-        鞋子
+<div class="w3cbox">
+    <div class="content">
+        标准盒子
     </div>
 </div>
 
 <hr>
-<div class="xiehe1">
-    <div class="xiezi1">
-        怪异的鞋子
+<div class="iebox">
+    <div class="content">
+        ie盒子
     </div>
 </div>
 </body>
